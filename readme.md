@@ -105,3 +105,7 @@ Your submission will be evaluated based on the following:
 **Deadline:** 02.08.2026
 
 Good luck, Architect! Build with precision and pride. 🚀
+
+![Design Preview](./preview1.png)
+![Design Preview](./preview2.png)
+![Design Preview](./preview3.png)
