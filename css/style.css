@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Roboto,sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: #FF6B1A;
+    /* text-align: center; */
+    padding: 50px;
+}
+.header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h2{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: Inter;
+    padding: 10px;
+}
+.header p{
+    color:#FFFFFFE5;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.header img{
+    width: 34px;
+    height: 30px;
+}
+
+.burgermenu{
+    height: 7rem;
+    background-color: #1A1A1A;
+    padding: 10px 20px;
+}
+.burgermenu ul{
+    display:none;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.7rem;
+
+}
+.burgermenu ul li{
+    padding: 1rem;
+    
+}
+.burgermenu ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+    
+
+.burgermenu ul li:hover{
+    background-color: #FF6B1A;
+    border-radius: 0.3rem;
+        
+}
+.menu-checked{
+    background-color: #FF6B1A;
+    border-radius: 0.3rem;
+}
+
+.burgermenu button{
+    background-color: #FF6B1A;
+    width: 10rem;
+    height: 3rem;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.burgermenu button a{
+    text-decoration: none;
+    color: white;
+
+}
+.burgermenu button img{
+    width: 1.3rem;
+    height: 1.4rem;
+    padding-right: 0.3rem;
+
+}
+
+
+.hero{
+    background-color:#2A2A2AE5;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero .bgcover{
+   background-image: url(assets/cover.png);
+
+   background-repeat: no-repeat;
+   width: 300px;
+   height: 300px;
+   background-size: 100%;
+   position: relative;
+   
+}
+.hero .bgcover .hero-txt{
+    color: white;
+    position: absolute;    
+    top: 10rem;
+    left: 3rem;
+}
+.hero .bgcover .hero-txt h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem;
+
+}
+.hero .bgcover .hero-txt p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+
+.container{
+    
+    padding: 0 15px;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 10px;
+    
+}
+.grid-container .item{
+    justify-self: center;
+    width: 300px;
+    height: 250px;
+    background-color: #FF6B1A;
+    border-radius: 12px;
+    position: relative;
+    transition:background-color 0.3s ease-in-out;
+
+}
+.grid-container .item:hover{
+    background-color: #FF6B1A;
+   
+}
+
+.grid-container .card-cover{
+    justify-self: center;
+    width: 300px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: absolute;
+    top: 5px;
+    box-shadow: 3px 4px 20px rgba(199, 198, 198, 0.377);   
+    transition:background-color 0.3s ease-in-out;
+    
+}
+.grid-container .card-cover:hover{
+    background-color: #ff6a1a56;
+
+}
+
+.grid-container .card-cover .card-title{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.grid-container .card-cover .card-title h2{
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+.grid-container .card-cover p{
+    color: #504f4f;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem;
+} 
+
+.grid-container .card-cover img{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.footer{
+    height: 100px;
+    background-color: #1A1A1A;
+    margin-top: 10rem;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+@media (min-width:768px) {
+    .grid-container{
+        grid-template-columns:repeat(2,1fr);         
+    }
+    .burgermenu button{
+        display: none;
+    }
+    .burgermenu ul{
+        display: flex;
+    }
+            
+}
+@media (min-width:992px) {
+    .grid-container{
+        grid-template-columns:repeat(3,1fr);
+        justify-content: space-evenly;
+    }
+    .hero .bgcover .hero-txt{
+        h1{
+            color: #FF6B1A;
+            font-size: 2.7rem;
+            font-weight: 800;
+        
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+    }   
+       
+}
+@media (min-width:1080px) {
+    .grid-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+    }
+       
+}
+@media(max-width:768px){
+    .footer span{
+        display: none;
+    }
+    .header h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: Inter;
+        padding: 10px;
+    }
+    .header p{
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+}
+@media(max-width:380px){
+    .footer span,
+    .header h2,
+    .header p {
+        display: none;
+    }
+
+}
+@media(max-width:320px){
+    .footer span,.header h2,.header p,.hero{
+        display: none;
+    }
+}
+@media(max-width:300px){
+    .header{
+        display: none;
+    }
+    .footer{
+        background:none;
+        color: #000000;
+    }
+    .burgermenu{
+        background: none;
+    }
+
+}
