@@ -47,24 +47,26 @@ a{
     height: 7rem;
     background-color: #1A1A1A;
     padding: 10px 20px;
+}
+.burgermenu ul{
+    display:none;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.7rem;
 
-    ul{
-        display:none;
-        justify-content: center;
-        list-style: none;
-        gap: 2rem;
-        font-size: 1.7rem;
-    li{
-        padding: 1rem;
-    }
-        a{
-            text-decoration: none;
-            color: white;
-            
-        }
-    }
+}
+.burgermenu ul li{
+    padding: 1rem;
     
 }
+.burgermenu ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+    
+
 .burgermenu ul li:hover{
     background-color: #FF6B1A;
     border-radius: 0.3rem;
@@ -88,19 +90,19 @@ a{
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-
-    a{
-        text-decoration: none;
-        color: white;
-    }
-
-    img{
-        width: 1.3rem;
-        height: 1.4rem;
-        padding-right: 0.3rem;
-    }
+}
+.burgermenu button a{
+    text-decoration: none;
+    color: white;
 
 }
+.burgermenu button img{
+    width: 1.3rem;
+    height: 1.4rem;
+    padding-right: 0.3rem;
+
+}
+
 
 .hero{
     background-color:#2A2A2AE5;
@@ -125,25 +127,25 @@ a{
     position: absolute;    
     top: 10rem;
     left: 3rem;
+}
+.hero .bgcover .hero-txt h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem;
 
-    h1{
-        color: white;
-        font-size: 2.5rem;
-        font-weight: 700;
-        padding: 1rem;
-    }
-    p{
-        font-size: 1.5rem;
-        font-weight: 500;
-        text-align: center;
-    }
-    
+}
+.hero .bgcover .hero-txt p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+
 }
 
 
 
 .container{
-    /* border: 1px solid red; */
+    
     padding: 0 15px;
     
 }
@@ -191,13 +193,14 @@ a{
     display: flex;
     gap: 0.5rem;
     padding: 1rem;
-    h2{
-        color: #000000;
-        font-size: 2.5rem;
-        font-weight: 700;
-
-    }      
 }
+
+.grid-container .card-cover .card-title h2{
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 
 .grid-container .card-cover p{
     color: #504f4f;
@@ -246,11 +249,11 @@ a{
     }
     .hero .bgcover .hero-txt{
         h1{
-        color: #FF6B1A;
-        font-size: 2.7rem;
-        font-weight: 800;
+            color: #FF6B1A;
+            font-size: 2.7rem;
+            font-weight: 800;
         
-    }
+        }
         p{
             font-size: 1.5rem;
             font-weight: 700;
